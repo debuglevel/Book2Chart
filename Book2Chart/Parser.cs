@@ -11,7 +11,7 @@ namespace Book2Chart.Parser
 {
     public class Parser
     {
-        public void Parse(string filename)
+        public Book Parse(string filename)
         {
             var sw = new StringWriter();
             XmlWriter writer = XmlWriter.Create(sw, new XmlWriterSettings() { ConformanceLevel = ConformanceLevel.Fragment });
@@ -32,7 +32,8 @@ namespace Book2Chart.Parser
 
             var cleanedParagrphs = paragraphs;//.Where(x => x.StyleName != "Inhalt");
 
-            var chapters = new List<Chapter>();
+            var book = new Book();
+            var chapters = book.Chapters;
 
             Chapter lastChapter = new Chapter() { Title = "DUMMY" };
             Chapter currentChapter = new Chapter() { Title = "DUMMY" };
@@ -79,6 +80,8 @@ namespace Book2Chart.Parser
             }
 
             checkChaptersErrors(chapters);
+
+            return book;
         }
 
         private void checkChaptersErrors(IEnumerable<Chapter> chapters)

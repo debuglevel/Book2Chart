@@ -8,7 +8,7 @@ namespace Book2Chart.Parser
 {
     public class Book
     {
-        public List<Chapter> Chapters { get; private set; }
+        public List<Chapter> Chapters { get; set; }
 
         public Book()
         {

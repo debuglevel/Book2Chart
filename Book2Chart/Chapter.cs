@@ -9,13 +9,17 @@ namespace Book2Chart.Parser
     public class Chapter
     {
         public string Title { get; set; }
-        public List<string> Text { get; private set; }
-        public List<string> Comment { get; private set; }
-        public List<string> Summary { get; private set; }
+        public List<string> Text { get; set; }
+        public List<string> Comment { get; set; }
+        public List<string> Summary { get; set; }
         public List<string> VorherRefs { get; private set; }
         public List<string> NacherRefs { get; private set; }
         public Chapter Vorher { get; set; }
         public Chapter Nacher { get; set; }
+
+        public String TextAsString { get { return String.Join(Environment.NewLine, this.Text); } }
+        public String CommentAsString { get { return String.Join(Environment.NewLine, this.Comment); } }
+        public String SummaryAsString { get { return String.Join(Environment.NewLine, this.Summary); } }
 
         public Chapter()
         {
