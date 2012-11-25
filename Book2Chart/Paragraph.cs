@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Book2Chart
+namespace Book2Chart.Parser
 {
     class Paragraph
     {

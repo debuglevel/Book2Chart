@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Book2Chart
+namespace Book2Chart.Parser
 {
-    class Program
+    public class Parser
     {
-        static void Main(string[] args)
+        public void Parse(string filename)
         {
             var sw = new StringWriter();
             XmlWriter writer = XmlWriter.Create(sw, new XmlWriterSettings() { ConformanceLevel = ConformanceLevel.Fragment });
 
-            XElement doc = XElement.Load("Book.fodt");
+            XElement doc = XElement.Load(filename);
 
             XNamespace nsOffice = "urn:oasis:names:tc:opendocument:xmlns:office:1.0";
             XNamespace nsText = "urn:oasis:names:tc:opendocument:xmlns:text:1.0";
@@ -79,12 +79,9 @@ namespace Book2Chart
             }
 
             checkChaptersErrors(chapters);
-
-            Console.ReadLine();
-
         }
 
-        private static void checkChaptersErrors(IEnumerable<Chapter> chapters)
+        private void checkChaptersErrors(IEnumerable<Chapter> chapters)
         {
             foreach (var chapter in chapters)
             {
@@ -92,14 +89,14 @@ namespace Book2Chart
             }
         }
 
-        private static void checkChapterErrors(IEnumerable<Chapter> chapters, Chapter chapter)
+        private void checkChapterErrors(IEnumerable<Chapter> chapters, Chapter chapter)
         {
             checkSiblings(chapters, chapter);
             checkTitle(chapter);
             checkSummary(chapter);
         }
 
-        private static Boolean checkSummary(Chapter chapter)
+        private Boolean checkSummary(Chapter chapter)
         {
             var success = chapter.Summary.Any(x=>x.Trim().Length > 0);
 
@@ -111,7 +108,7 @@ namespace Book2Chart
             return !success;
         }
 
-        private static Boolean checkTitle(Chapter chapter)
+        private Boolean checkTitle(Chapter chapter)
         {
             bool failed = false;
 
@@ -124,7 +121,7 @@ namespace Book2Chart
             return failed;
         }
 
-        private static Boolean checkSiblings(IEnumerable<Chapter> chapters, Chapter chapter)
+        private Boolean checkSiblings(IEnumerable<Chapter> chapters, Chapter chapter)
         {
             bool failed = false;
 
