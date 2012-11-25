@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Book2Chart.Parser
 {
-    class Paragraph
+    public class Paragraph
     {
         public string Content { get; set; }
         public string StyleName { get; set; }

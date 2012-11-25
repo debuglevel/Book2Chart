@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Book2Chart.Parser
 {
-    class Chapter
+    public class Chapter
     {
         public string Title { get; set; }
-        public List<string> Comment { get; set; }
-        public List<string> Summary { get; set; }
-        public List<string> Text { get; set; }
-        public List<string> VorherRefs { get; set; }
-        public List<string> NacherRefs { get; set; }
+        public List<string> Text { get; private set; }
+        public List<string> Comment { get; private set; }
+        public List<string> Summary { get; private set; }
+        public List<string> VorherRefs { get; private set; }
+        public List<string> NacherRefs { get; private set; }
         public Chapter Vorher { get; set; }
         public Chapter Nacher { get; set; }
 
