@@ -24,5 +24,30 @@ namespace Book2Chart.GUI
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        {
+            // Configure open file dialog box
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+            dlg.FileName = "Book"; // Default file name
+            dlg.DefaultExt = ".fodt"; // Default file extension
+            dlg.Filter = "Flat ODT (.fodt)|*.fodt"; // Filter files by extension 
+
+            // Show open file dialog box
+            bool? result = dlg.ShowDialog();
+
+            // Process open file dialog box results 
+            if (result == true)
+            {
+                // Open document 
+                string filename = dlg.FileName;
+
+                var parser = new Book2Chart.Parser.Parser();
+                var book = parser.Parse(filename);
+                this.DataContext = book;
+            }
+
+
+        }
     }
 }
