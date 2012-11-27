@@ -10,7 +10,7 @@ namespace Book2Chart.TUI
     {
         static void Main(string[] args)
         {
-            var parser = new Book2Chart.Parser.Parser();
+            var parser = new Book2Chart.Parser.FodtParser();
             parser.Parse("Book.fodt");
 
             Console.ReadLine();

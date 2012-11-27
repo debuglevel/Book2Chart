@@ -42,7 +42,7 @@ namespace Book2Chart.GUI
                 // Open document 
                 string filename = dlg.FileName;
 
-                var parser = new Book2Chart.Parser.Parser();
+                var parser = new Book2Chart.Parser.FodtParser();
                 var book = parser.Parse(filename);
                 this.DataContext = book;
             }

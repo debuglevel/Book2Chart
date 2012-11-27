@@ -9,7 +9,7 @@ using System.Xml.Linq;
 
 namespace Book2Chart.Parser
 {
-    public class Parser
+    public class FodtParser
     {
         public Book Parse(string filename)
         {
