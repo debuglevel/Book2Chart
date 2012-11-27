@@ -8,6 +8,8 @@ using Graphviz4Net.Graphs;
 namespace Book2Chart.Parser
 {
     public class Arrow { }
+    public class SucceedingArrow : Arrow { }
+    public class PrecedingArrow : Arrow { }
 
     public class GraphBuilder
     {
@@ -27,7 +29,7 @@ namespace Book2Chart.Parser
                     Chapter preceedingChapter = this.findChapterByTitle(chapters, precedingChapterString);
                     if (preceedingChapter != null)
                     {
-                        graph.AddEdge(new Edge<Chapter>(preceedingChapter, chapter, destinationArrow: new Test.Blubb.PrecedingArrow()));
+                        graph.AddEdge(new Edge<Chapter>(preceedingChapter, chapter, destinationArrow: new PrecedingArrow()));
                     }
                 }
 
@@ -36,7 +38,7 @@ namespace Book2Chart.Parser
                     Chapter succeedingChapter = this.findChapterByTitle(chapters, succeedingChapterString);
                     if (succeedingChapter != null)
                     {
-                        graph.AddEdge(new Edge<Chapter>(chapter, succeedingChapter, destinationArrow: new Test.Blubb.SucceedingArrow()));
+                        graph.AddEdge(new Edge<Chapter>(chapter, succeedingChapter, destinationArrow: new SucceedingArrow()));
                     }
                 }
             }
