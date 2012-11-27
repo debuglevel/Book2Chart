@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Book2Chart.Parser;
+using Graphviz4Net.Graphs;
 
 namespace Book2Chart.GUI
 {
@@ -20,7 +21,7 @@ namespace Book2Chart.GUI
     /// </summary>
     public partial class GraphWindow : Window
     {
-        public Book Book { get; private set; }
+        public Graph<Chapter> Graph { get; private set; }
 
         public GraphWindow()
         {
@@ -29,8 +30,9 @@ namespace Book2Chart.GUI
 
         public GraphWindow(Book book) : this()
         {
-            this.Book = book;
-            this.DataContext = book;
+            var graphBuilder = new GraphBuilder();
+            this.Graph = graphBuilder.CreateGraph(book.Chapters);
+            this.DataContext = this;
         }
     }
 }

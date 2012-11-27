@@ -35,6 +35,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Graphviz4Net">
+      <HintPath>..\..\graphviz4net-beta\Graphviz4Net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,8 +49,9 @@
   <ItemGroup>
     <Compile Include="Book.cs" />
     <Compile Include="Chapter.cs" />
+    <Compile Include="GraphBuilder.cs" />
     <Compile Include="Paragraph.cs" />
-    <Compile Include="Parser.cs" />
+    <Compile Include="FodtParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

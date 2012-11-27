@@ -86,7 +86,7 @@
                 </GroupBox>
                 <GroupBox Grid.Column="2">
                     <GroupBox.Header>Succeeding</GroupBox.Header>
-                    <ListBox x:Name="listboxNacher" ItemsSource="{Binding NacherRefs}" />
+                    <Button Content="Graph" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="78" Margin="133,-17,-12,0" Click="Button_Click_1"/>
                 </GroupBox>
             </Grid>
             <GroupBox Grid.Row="1">

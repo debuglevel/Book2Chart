@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Book2Chart.Parser;
 
 namespace Book2Chart.GUI
 {
@@ -48,6 +49,11 @@ namespace Book2Chart.GUI
             }
 
 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            new GraphWindow(DataContext as Book).Show();
         }
     }
 }
