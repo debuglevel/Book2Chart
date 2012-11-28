@@ -39,7 +39,7 @@ namespace Book2Chart.Parser
             Chapter currentChapter = new Chapter() { Title = "DUMMY" };
             foreach (var paragraph in cleanedParagrphs)
             {
-                if (paragraph.StyleName == "P1" || paragraph.StyleName.StartsWith("Titel"))
+                if (paragraph.StyleName == "P1" || paragraph.StyleName == "P2" || paragraph.StyleName == "P3" || paragraph.StyleName == "P4" || paragraph.StyleName.StartsWith("Titel"))
                 {
                     lastChapter = currentChapter;
 
