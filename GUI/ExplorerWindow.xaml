@@ -1,8 +1,10 @@
 ﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:Parser="clr-namespace:Book2Chart.Parser;assembly=Parser" xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Book2Chart.GUI.MainWindow"
-        Title="MainWindow" Height="600" Width="800" Loaded="Window_Loaded_1">
+        xmlns:Parser="clr-namespace:Book2Chart.Parser;assembly=Parser"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        x:Class="Book2Chart.GUI.ExplorerWindow"
+        Title="Book Explorer - Book2Chart" Height="600" Width="800" Loaded="Window_Loaded_1">
     <Window.DataContext>
         <Parser:Book>
             <Parser:Book.Chapters>

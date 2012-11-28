@@ -7,7 +7,7 @@
         xmlns:Parser="clr-namespace:Book2Chart.Parser;assembly=Parser"
         x:Class="Book2Chart.GUI.GraphWindow" 
         
-        Title="GraphWindow" Height="600" Width="800">
+        Title="Visualize dependencies - Book2Chart" Height="600" Width="800">
     
     <Window.Resources>
         <DataTemplate DataType="{x:Type Parser:Chapter}">
