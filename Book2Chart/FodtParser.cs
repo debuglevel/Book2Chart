@@ -32,7 +32,7 @@ namespace Book2Chart.Parser
             Chapter currentChapter = new Chapter() { Title = "DUMMY" };
             foreach (var paragraph in paragraphs)
             {
-                if (paragraph.StyleName.StartsWith("ZZ_20_Titel"))
+                if (paragraph.StyleName.StartsWith("ZZTitel"))
                 {
                     lastChapter = currentChapter;
 
@@ -45,23 +45,23 @@ namespace Book2Chart.Parser
                     currentChapter.Title = paragraph.Content;
                     currentChapter.RevisionStatus = this.getRevisionStatus(paragraph.StyleName);
                 }
-                else if (paragraph.StyleName == "ZZ_20_Einordnung_20_danach")
+                else if (paragraph.StyleName == "ZZEinordnungDanach")
                 {
                     currentChapter.SucceedingChapterReferences.Add(paragraph.Content);
                 }
-                else if (paragraph.StyleName == "ZZ_20_Einordnung_20_vorher")
+                else if (paragraph.StyleName == "ZZEinordnungVorher")
                 {
                     currentChapter.PrecedingChapterReferences.Add(paragraph.Content);
                 }
-                else if (paragraph.StyleName == "ZZ_20_Zusammenfassung")
+                else if (paragraph.StyleName == "ZZZusammenfassung")
                 {
                     currentChapter.Summary.Add(paragraph.Content);
                 }
-                else if (paragraph.StyleName == "ZZ_20_Kommentar")
+                else if (paragraph.StyleName == "ZZKommentar")
                 {
                     currentChapter.Comment.Add(paragraph.Content);
                 }
-                else if (paragraph.StyleName == "ZZ_20_Inhalt")
+                else if (paragraph.StyleName == "ZZInhalt")
                 {
                     currentChapter.Text.Add(paragraph.Content);
                 }
@@ -79,15 +79,15 @@ namespace Book2Chart.Parser
 
         private Chapter.RevisionStatuses getRevisionStatus(string stylename)
         {
-            if (stylename == "ZZ_20_Titel_20_geprueft")
+            if (stylename == "ZZTitelGeprueft")
             {
                 return Chapter.RevisionStatuses.Good;
             }
-            else if (stylename == "ZZ_20_Titel_20_verbesserungsbeduerftig")
+            else if (stylename == "ZZTitelVerbesserungsbeduerftig")
             {
                 return Chapter.RevisionStatuses.Improvable;
             }
-            else if (stylename == "ZZ_20_Titel_20_ungeprueft")
+            else if (stylename == "ZZTitelUngeprueft")
             {
                 return Chapter.RevisionStatuses.Unreviewed;
             }
