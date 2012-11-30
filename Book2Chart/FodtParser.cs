@@ -43,6 +43,7 @@ namespace Book2Chart.Parser
                     lastChapter.SucceedingChapter = currentChapter;
 
                     currentChapter.Title = paragraph.Content;
+                    currentChapter.RevisionStatus = this.getRevisionStatus(paragraph.StyleName);
                 }
                 else if (paragraph.StyleName == "ZZ_20_Einordnung_20_danach")
                 {
@@ -74,6 +75,24 @@ namespace Book2Chart.Parser
             this.checkChaptersErrors(book.Chapters);
 
             return book;
+        }
+
+        private Chapter.RevisionStatuses getRevisionStatus(string stylename)
+        {
+            if (stylename == "ZZ_20_Titel_20_geprueft")
+            {
+                return Chapter.RevisionStatuses.Good;
+            }
+            else if (stylename == "ZZ_20_Titel_20_verbesserungsbeduerftig")
+            {
+                return Chapter.RevisionStatuses.Improvable;
+            }
+            else if (stylename == "ZZ_20_Titel_20_ungeprueft")
+            {
+                return Chapter.RevisionStatuses.Unreviewed;
+            }
+
+            return Chapter.RevisionStatuses.Unknown;
         }
 
         private XElement loadXML(string filename)
