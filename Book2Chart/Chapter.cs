@@ -8,7 +8,7 @@ namespace Book2Chart.Parser
 {
     public class Chapter
     {
-        public enum RevisionStatuses { Unknown, Good, Improvable, Unreviewed }
+        public enum RevisionStatuses { Unknown, Good, Improvable, Unreviewed, Milestone }
 
         public string Title { get; set; }
         public List<string> Text { get; set; }

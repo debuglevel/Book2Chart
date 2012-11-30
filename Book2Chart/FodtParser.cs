@@ -91,6 +91,10 @@ namespace Book2Chart.Parser
             {
                 return Chapter.RevisionStatuses.Unreviewed;
             }
+            else if (stylename == "ZZTitelMeilenstein")
+            {
+                return Chapter.RevisionStatuses.Milestone;
+            }
 
             return Chapter.RevisionStatuses.Unknown;
         }
