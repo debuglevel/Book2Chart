@@ -16,6 +16,7 @@ namespace Book2Chart.Parser
         public List<string> NacherRefs { get; private set; }
         public Chapter Vorher { get; set; }
         public Chapter Nacher { get; set; }
+        public List<KeyValuePair<string, object>> DebugInformation { get; private set; }
 
         public String TextAsString { get { return String.Join(Environment.NewLine, this.Text); } }
         public String CommentAsString { get { return String.Join(Environment.NewLine, this.Comment); } }
@@ -28,6 +29,7 @@ namespace Book2Chart.Parser
             this.Text = new List<string>();
             this.VorherRefs = new List<string>();
             this.NacherRefs = new List<string>();
+            this.DebugInformation = new List<KeyValuePair<string, object>>();
         }
     }
 }
