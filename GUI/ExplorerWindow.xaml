@@ -59,7 +59,9 @@
         </Grid.ColumnDefinitions>
 
         <GroupBox>
-            <GroupBox.Header>Chapters</GroupBox.Header>
+            <GroupBox.Header>
+                <TextBlock Text="{Binding Chapters.Count, StringFormat=Chapters ({0})}" />
+            </GroupBox.Header>
             <ListBox x:Name="listboxChapters" ItemsSource="{Binding Chapters}" DisplayMemberPath="Title" />
         </GroupBox>
 
