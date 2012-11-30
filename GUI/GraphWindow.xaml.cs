@@ -34,5 +34,27 @@ namespace Book2Chart.GUI
             this.Graph = graphBuilder.CreateGraph(book.Chapters);
             this.DataContext = this;
         }
+
+        private void zoomcontrol_MouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            if (e.Delta > 0)
+            {
+                if (this.zoomcontrol.Zoom >= this.zoomcontrol.MaxZoom)
+                {
+                    return;
+                }
+
+                this.zoomcontrol.Zoom += 0.1;
+            }
+            else if (e.Delta < 0)
+            {
+                if (this.zoomcontrol.Zoom <= this.zoomcontrol.MinZoom)
+                {
+                    return;
+                }
+
+                this.zoomcontrol.Zoom -= 0.1;
+            }
+        }
     }
 }

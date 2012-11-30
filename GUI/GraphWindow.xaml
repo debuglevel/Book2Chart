@@ -69,7 +69,7 @@
     </Window.Resources>
     
     <Grid>
-        <WpfExt:ZoomControl>
+        <WpfExt:ZoomControl x:Name="zoomcontrol" MouseWheel="zoomcontrol_MouseWheel" MaxZoom="2.0" MinZoom="0.1">
             <g4n:GraphLayout Graph="{Binding Graph}" />
         </WpfExt:ZoomControl>
     </Grid>
