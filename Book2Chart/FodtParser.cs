@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -9,103 +10,120 @@ using System.Xml.Linq;
 
 namespace Book2Chart.Parser
 {
+    /// <summary>
+    /// Parses a Flat ODT file with specified styles and creates a book object
+    /// </summary>
     public class FodtParser
     {
+        /// <summary>
+        /// parses a given Flat ODT file
+        /// </summary>
+        /// <param name="filename">the path to the FODT file</param>
+        /// <returns>a book object containing the FODT's information</returns>
         public Book Parse(string filename)
+        {
+            XElement document = this.loadXML(filename);
+
+            var paragraphs = this.getParagraphs(document);
+
+            var book = new Book();
+
+            Chapter lastChapter = new Chapter() { Title = "DUMMY" };
+            Chapter currentChapter = new Chapter() { Title = "DUMMY" };
+            foreach (var paragraph in paragraphs)
+            {
+                if (paragraph.StyleName.StartsWith("ZZ_20_Titel"))
+                {
+                    lastChapter = currentChapter;
+
+                    currentChapter = new Chapter();
+                    book.Chapters.Add(currentChapter);
+
+                    currentChapter.PrecedingChapter = lastChapter;
+                    lastChapter.SucceedingChapter = currentChapter;
+
+                    currentChapter.Title = paragraph.Content;
+                }
+                else if (paragraph.StyleName == "ZZ_20_Einordnung_20_danach")
+                {
+                    currentChapter.SucceedingChapterReferences.Add(paragraph.Content);
+                }
+                else if (paragraph.StyleName == "ZZ_20_Einordnung_20_vorher")
+                {
+                    currentChapter.PrecedingChapterReferences.Add(paragraph.Content);
+                }
+                else if (paragraph.StyleName == "ZZ_20_Zusammenfassung")
+                {
+                    currentChapter.Summary.Add(paragraph.Content);
+                }
+                else if (paragraph.StyleName == "ZZ_20_Kommentar")
+                {
+                    currentChapter.Comment.Add(paragraph.Content);
+                }
+                else if (paragraph.StyleName == "ZZ_20_Inhalt")
+                {
+                    currentChapter.Text.Add(paragraph.Content);
+                }
+                else
+                {
+                    Trace.TraceWarning("unknown style name used: " + paragraph.StyleName);
+                    paragraph.DebugInformation.Add(new KeyValuePair<DebugInformationType,object>(DebugInformationType.UnknownStyle, paragraph.StyleName));
+                }
+            }
+
+            this.checkChaptersErrors(book.Chapters);
+
+            return book;
+        }
+
+        private XElement loadXML(string filename)
         {
             var sw = new StringWriter();
             XmlWriter writer = XmlWriter.Create(sw, new XmlWriterSettings() { ConformanceLevel = ConformanceLevel.Fragment });
 
             XElement doc = XElement.Load(filename);
+            return doc;
+        }
 
+        private IEnumerable<Paragraph> getParagraphs(XElement doc)
+        {
             XNamespace nsOffice = "urn:oasis:names:tc:opendocument:xmlns:office:1.0";
             XNamespace nsText = "urn:oasis:names:tc:opendocument:xmlns:text:1.0";
 
             var xmlParagraphs = doc.Descendants(nsOffice + "body").Descendants(nsOffice + "text").Descendants(nsText + "p");
 
             var paragraphs = from item in xmlParagraphs
-                       select new Paragraph()
-                           {
-                               Content = item.Value,
-                               StyleName = item.Attribute(nsText + "style-name").Value
-                           };
-
-            var cleanedParagrphs = paragraphs;//.Where(x => x.StyleName != "Inhalt");
-
-            var book = new Book();
-            var chapters = book.Chapters;
-
-            Chapter lastChapter = new Chapter() { Title = "DUMMY" };
-            Chapter currentChapter = new Chapter() { Title = "DUMMY" };
-            foreach (var paragraph in cleanedParagrphs)
-            {
-                if (paragraph.StyleName == "P1" || paragraph.StyleName == "P2" || paragraph.StyleName == "P3" || paragraph.StyleName == "P4" || paragraph.StyleName.StartsWith("Titel"))
-                {
-                    lastChapter = currentChapter;
-
-                    currentChapter = new Chapter();
-                    chapters.Add(currentChapter);
-
-                    currentChapter.Vorher = lastChapter;
-                    lastChapter.Nacher = currentChapter;
-
-                    currentChapter.Title = paragraph.Content;
-                }
-
-                if (paragraph.StyleName.EndsWith("danach"))
-                {
-                    currentChapter.NacherRefs.Add(paragraph.Content);
-                }
-
-                if (paragraph.StyleName.EndsWith("vorher"))
-                {
-                    currentChapter.VorherRefs.Add(paragraph.Content);
-                }
-
-                if (paragraph.StyleName == "Zusammenfassung")
-                {
-                    currentChapter.Summary.Add(paragraph.Content);
-                }
-
-                if (paragraph.StyleName == "Kommentar")
-                {
-                    currentChapter.Comment.Add(paragraph.Content);
-                }
-
-                if (paragraph.StyleName == "Inhalt")
-                {
-                    currentChapter.Text.Add(paragraph.Content);
-                }
-
-            }
-
-            checkChaptersErrors(chapters);
-
-            return book;
+                             select new Paragraph()
+                             {
+                                 Content = item.Value,
+                                 StyleName = item.Attribute(nsText + "style-name").Value
+                             };
+            return paragraphs;
         }
 
         private void checkChaptersErrors(IEnumerable<Chapter> chapters)
         {
             foreach (var chapter in chapters)
             {
-                checkChapterErrors(chapters, chapter);
+                this.checkChapterErrors(chapters, chapter);
             }
         }
 
         private void checkChapterErrors(IEnumerable<Chapter> chapters, Chapter chapter)
         {
-            checkSiblings(chapters, chapter);
-            checkTitle(chapter);
-            checkSummary(chapter);
+            this.checkReferences(chapters, chapter);
+            this.checkTitle(chapter);
+            this.checkSummary(chapter);
         }
 
         private Boolean checkSummary(Chapter chapter)
         {
-            var success = chapter.Summary.Any(x=>x.Trim().Length > 0);
+            var success = chapter.Summary.Any(p => String.IsNullOrWhiteSpace(p) == false);
 
             if (success == false)
             {
-                Console.WriteLine("Chapter '"+chapter.Title+"' has no summary");
+                Trace.TraceInformation("Chapter '"+chapter.Title+"' has no summary");
+                chapter.DebugInformation.Add(new KeyValuePair<DebugInformationType,object>(DebugInformationType.EmptySummary, null));
             }
 
             return !success;
@@ -113,28 +131,29 @@ namespace Book2Chart.Parser
 
         private Boolean checkTitle(Chapter chapter)
         {
-            bool failed = false;
-
-            if (chapter.Title.Any() == false)
+            if (String.IsNullOrWhiteSpace(chapter.Title))
             {
-                failed = true;
-                Console.WriteLine("Chapter between '" + chapter.Vorher.Title + "' and '" + chapter.Nacher.Title + "' has no name.");
+                Trace.TraceInformation("Chapter between '" + chapter.PrecedingChapter.Title + "' and '" + chapter.SucceedingChapter.Title + "' has no name.");
+                chapter.DebugInformation.Add(new KeyValuePair<DebugInformationType, object>(DebugInformationType.EmptyTitle, null));
+
+                return false;
             }
 
-            return failed;
+            return true;
         }
 
-        private Boolean checkSiblings(IEnumerable<Chapter> chapters, Chapter chapter)
+        private Boolean checkReferences(IEnumerable<Chapter> chapters, Chapter chapter)
         {
             bool failed = false;
 
-            foreach (var sibling in chapter.VorherRefs.Concat(chapter.NacherRefs))
+            foreach (var sibling in chapter.PrecedingChapterReferences.Concat(chapter.SucceedingChapterReferences))
             {
                 bool exists = chapters.Any(x => x.Title == sibling);
                 if (exists == false)
                 {
                     failed = true;
-                    Console.WriteLine("Chapter '" + sibling + "' referenced but does not exist.");
+                    Trace.TraceInformation("Chapter '" + sibling + "' by '" + chapter.Title + "' referenced but does not exist.");
+                    chapter.DebugInformation.Add(new KeyValuePair<DebugInformationType, object>(DebugInformationType.MissingReference, sibling));
                 }
             }
 

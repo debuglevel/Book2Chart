@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Book.cs" />
     <Compile Include="Chapter.cs" />
+    <Compile Include="DebugInformationEnum.cs" />
     <Compile Include="GraphBuilder.cs" />
     <Compile Include="Paragraph.cs" />
     <Compile Include="FodtParser.cs" />

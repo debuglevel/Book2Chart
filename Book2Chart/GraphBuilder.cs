@@ -24,7 +24,7 @@ namespace Book2Chart.Parser
 
             foreach (var chapter in chapters)
             {
-                foreach (var precedingChapterString in chapter.VorherRefs)
+                foreach (var precedingChapterString in chapter.PrecedingChapterReferences)
                 {
                     Chapter preceedingChapter = this.findChapterByTitle(chapters, precedingChapterString);
                     if (preceedingChapter != null)
@@ -33,7 +33,7 @@ namespace Book2Chart.Parser
                     }
                 }
 
-                foreach (var succeedingChapterString in chapter.NacherRefs)
+                foreach (var succeedingChapterString in chapter.SucceedingChapterReferences)
                 {
                     Chapter succeedingChapter = this.findChapterByTitle(chapters, succeedingChapterString);
                     if (succeedingChapter != null)
