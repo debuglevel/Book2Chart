@@ -24,6 +24,8 @@ namespace Book2Chart.Parser
         {
             XElement document = this.loadXML(filename);
 
+            var styles = this.getStyles(document);
+
             var paragraphs = this.getParagraphs(document);
 
             var book = new Book();
@@ -32,7 +34,10 @@ namespace Book2Chart.Parser
             Chapter currentChapter = new Chapter() { Title = "DUMMY" };
             foreach (var paragraph in paragraphs)
             {
-                if (paragraph.StyleName.StartsWith("ZZTitel"))
+                paragraph.Style = this.getStyle(styles, paragraph);
+                var styleType = paragraph.Style.StyleType;
+
+                if (styleType == StyleType.Title)
                 {
                     lastChapter = currentChapter;
 
@@ -45,30 +50,29 @@ namespace Book2Chart.Parser
                     currentChapter.Title = paragraph.Content;
                     currentChapter.RevisionStatus = this.getRevisionStatus(paragraph.StyleName);
                 }
-                else if (paragraph.StyleName == "ZZEinordnungDanach")
+                else if (styleType == StyleType.Successor)
                 {
                     currentChapter.SucceedingChapterReferences.Add(paragraph.Content);
                 }
-                else if (paragraph.StyleName == "ZZEinordnungVorher")
+                else if (styleType == StyleType.Precessor)
                 {
                     currentChapter.PrecedingChapterReferences.Add(paragraph.Content);
                 }
-                else if (paragraph.StyleName == "ZZZusammenfassung")
+                else if (styleType == StyleType.Summary)
                 {
                     currentChapter.Summary.Add(paragraph.Content);
                 }
-                else if (paragraph.StyleName == "ZZKommentar")
+                else if (styleType == StyleType.Comment)
                 {
                     currentChapter.Comment.Add(paragraph.Content);
                 }
-                else if (paragraph.StyleName == "ZZInhalt")
+                else if (styleType == StyleType.Content)
                 {
                     currentChapter.Text.Add(paragraph.Content);
                 }
                 else
                 {
-                    Trace.TraceWarning("unknown style name used: " + paragraph.StyleName);
-                    paragraph.DebugInformation.Add(new KeyValuePair<DebugInformationType,object>(DebugInformationType.UnknownStyle, paragraph.StyleName));
+
                 }
             }
 
@@ -77,26 +81,143 @@ namespace Book2Chart.Parser
             return book;
         }
 
-        private Chapter.RevisionStatuses getRevisionStatus(string stylename)
+        private Style getStyle(IEnumerable<Style> styles, Paragraph paragraph)
+        {
+            string styleName = paragraph.StyleName;
+
+            var style = styles.FirstOrDefault(s => s.Name == styleName);
+            if (style.IsBaseStyle)
+            {
+                return style;
+            }
+            else
+            {
+                return style.ParentStyle;
+            }
+        }
+
+        private StyleType getStyleType(string styleName)
+        {
+            if (styleName.StartsWith("ZZTitel"))
+            {
+                return StyleType.Title;
+            }
+            else if (styleName == "ZZEinordnungDanach")
+            {
+                return StyleType.Successor;
+            }
+            else if (styleName == "ZZEinordnungVorher")
+            {
+                return StyleType.Precessor;
+            }
+            else if (styleName == "ZZZusammenfassung")
+            {
+                return StyleType.Summary;
+            }
+            else if (styleName == "ZZKommentar")
+            {
+                return StyleType.Comment;
+            }
+            else if (styleName == "ZZInhalt")
+            {
+                return StyleType.Content;
+            }
+            else
+            {
+                //Trace.TraceWarning("unknown style name used: " + paragraph.StyleName);
+                //paragraph.DebugInformation.Add(new KeyValuePair<DebugInformationType, object>(DebugInformationType.UnknownStyle, paragraph.StyleName));
+
+                return StyleType.Unkown;
+            }
+        }
+
+        private IEnumerable<Style> getStyles(XElement document)
+        {
+            var styles = this.getAllStyles(document);
+            this.assignAutomaticStyles(styles);
+            this.assignBaseStyleTypes(styles);
+
+            return styles;
+        }
+
+        private void assignBaseStyleTypes(IEnumerable<Style> styles)
+        {
+            foreach (var style in styles.Where(s=>s.IsBaseStyle))
+            {
+                style.StyleType = this.getStyleType(style.Name);
+            }
+        }
+
+        private IEnumerable<Style> getAllStyles(XElement document)
+        {
+            XNamespace nsOffice = "urn:oasis:names:tc:opendocument:xmlns:office:1.0";
+            XNamespace nsStyle = "urn:oasis:names:tc:opendocument:xmlns:style:1.0";
+
+            var xmlDefinedStyles = document.Descendants(nsOffice + "styles").Descendants(nsStyle + "style");
+            var definedStyles = from item in xmlDefinedStyles
+                                select new Style
+                                {
+                                    Name = item.Attribute(nsStyle + "name").Value,
+                                    IsBaseStyle = true
+                                };
+
+            var xmlAutomaticStyles = document.Descendants(nsOffice + "automatic-styles").Descendants(nsStyle + "style");
+            var automaticStyles = from item in xmlAutomaticStyles
+                         select new Style
+                         {
+                             Name = item.Attribute(nsStyle + "name").Value,
+                             ParentStyleName = item.Attribute(nsStyle + "parent-style-name") != null ? item.Attribute(nsStyle + "parent-style-name").Value : null,
+                             IsBaseStyle = false
+                         };
+
+            var styles = definedStyles.Concat(automaticStyles);
+
+            //var styles = (from item in xmlStyles
+            //              select new Style
+            //              {
+            //                  Name = item.Attribute(nsStyle + "name").Value,
+            //                  ParentStyleName = item.Attribute(nsStyle + "parent-style-name") != null ? item.Attribute(nsStyle + "parent-style-name").Value : null
+            //              }).Where(s => s.ParentStyleName != null);
+
+            return styles.ToList();
+        }
+
+        private void assignAutomaticStyles(IEnumerable<Style> styles)
+        {
+            foreach (var style in styles)
+            {
+                var parentStyle = styles.FirstOrDefault(s => s.Name == style.ParentStyleName && s.IsBaseStyle);
+                if (parentStyle != null)
+                {
+                    style.ParentStyle = parentStyle;
+                }
+                else
+                {
+                    Trace.TraceWarning("ParentStyle '"+style.ParentStyleName+"' used by '"+style.Name+"' not found (or is no base style).");
+                }
+            }
+        }
+
+        private RevisionStatus getRevisionStatus(string stylename)
         {
             if (stylename == "ZZTitelGeprueft")
             {
-                return Chapter.RevisionStatuses.Good;
+                return RevisionStatus.Good;
             }
             else if (stylename == "ZZTitelVerbesserungsbeduerftig")
             {
-                return Chapter.RevisionStatuses.Improvable;
+                return RevisionStatus.Improvable;
             }
             else if (stylename == "ZZTitelUngeprueft")
             {
-                return Chapter.RevisionStatuses.Unreviewed;
+                return RevisionStatus.Unreviewed;
             }
             else if (stylename == "ZZTitelMeilenstein")
             {
-                return Chapter.RevisionStatuses.Milestone;
+                return RevisionStatus.Milestone;
             }
 
-            return Chapter.RevisionStatuses.Unknown;
+            return RevisionStatus.Unknown;
         }
 
         private XElement loadXML(string filename)
@@ -121,7 +242,8 @@ namespace Book2Chart.Parser
                                  Content = item.Value,
                                  StyleName = item.Attribute(nsText + "style-name").Value
                              };
-            return paragraphs;
+
+            return paragraphs.ToList();
         }
 
         private void checkChaptersErrors(IEnumerable<Chapter> chapters)

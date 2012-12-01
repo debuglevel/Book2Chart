@@ -8,8 +8,6 @@ namespace Book2Chart.Parser
 {
     public class Chapter
     {
-        public enum RevisionStatuses { Unknown, Good, Improvable, Unreviewed, Milestone }
-
         public string Title { get; set; }
         public List<string> Text { get; set; }
         public List<string> Comment { get; set; }
@@ -19,7 +17,7 @@ namespace Book2Chart.Parser
         public Chapter PrecedingChapter { get; set; }
         public Chapter SucceedingChapter { get; set; }
         public List<KeyValuePair<DebugInformationType, object>> DebugInformation { get; private set; }
-        public RevisionStatuses RevisionStatus { get; set; }
+        public RevisionStatus RevisionStatus { get; set; }
 
         public String TextAsString { get { return String.Join(Environment.NewLine, this.Text); } }
         public String CommentAsString { get { return String.Join(Environment.NewLine, this.Comment); } }
