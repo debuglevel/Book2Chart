@@ -48,7 +48,7 @@ namespace Book2Chart.Parser
                     lastChapter.SucceedingChapter = currentChapter;
 
                     currentChapter.Title = paragraph.Content;
-                    currentChapter.RevisionStatus = this.getRevisionStatus(paragraph.StyleName);
+                    currentChapter.RevisionStatus = this.getRevisionStatus(paragraph.Style);
                 }
                 else if (styleType == StyleType.Successor)
                 {
@@ -198,8 +198,10 @@ namespace Book2Chart.Parser
             }
         }
 
-        private RevisionStatus getRevisionStatus(string stylename)
+        private RevisionStatus getRevisionStatus(Style style)
         {
+            var stylename = style.Name;
+
             if (stylename == "ZZTitelGeprueft")
             {
                 return RevisionStatus.Good;
