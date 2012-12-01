@@ -222,11 +222,12 @@ namespace Book2Chart.Parser
 
         private XElement loadXML(string filename)
         {
-            var sw = new StringWriter();
-            XmlWriter writer = XmlWriter.Create(sw, new XmlWriterSettings() { ConformanceLevel = ConformanceLevel.Fragment });
+            XmlWriter xmlWriter = XmlWriter.Create(new StringWriter(), new XmlWriterSettings() { ConformanceLevel = ConformanceLevel.Fragment });
 
-            XElement doc = XElement.Load(filename);
-            return doc;
+            var fileStream = new FileStream(filename, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+
+            XElement document = XElement.Load(fileStream);
+            return document;
         }
 
         private IEnumerable<Paragraph> getParagraphs(XElement doc)
