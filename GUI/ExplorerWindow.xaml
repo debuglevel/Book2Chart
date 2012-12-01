@@ -4,7 +4,7 @@
         xmlns:Parser="clr-namespace:Book2Chart.Parser;assembly=Parser"
         xmlns:System="clr-namespace:System;assembly=mscorlib"
         x:Class="Book2Chart.GUI.ExplorerWindow"
-        Title="Book Explorer - Book2Chart" Height="600" Width="800" Loaded="Window_Loaded_1">
+        Title="Book Explorer - Book2Chart" Height="600" Width="800">
     <Window.DataContext>
         <Parser:Book>
             <Parser:Book.Chapters>
@@ -82,6 +82,7 @@
                 </Grid.ColumnDefinitions>
                 
                 <Button Content="Graph" HorizontalAlignment="Right" Height="21" VerticalAlignment="Top" Width="78" Click="Button_Click_1"/>
+                <Button Content="Load" HorizontalAlignment="Right" Height="21" VerticalAlignment="Top" Width="78" Click="Button_Click_Load" Margin="0,0,64,0"/>
                 
                 <GroupBox Grid.Column="0">
                     <GroupBox.Header>Preceding</GroupBox.Header>

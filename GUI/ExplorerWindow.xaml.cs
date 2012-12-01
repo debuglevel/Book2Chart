@@ -26,7 +26,7 @@ namespace Book2Chart.GUI
             InitializeComponent();
         }
 
-        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        private void load()
         {
             // Configure open file dialog box
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
@@ -54,6 +54,11 @@ namespace Book2Chart.GUI
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             new GraphWindow(DataContext as Book).Show();
+        }
+
+        private void Button_Click_Load(object sender, RoutedEventArgs e)
+        {
+            this.load();
         }
     }
 }
