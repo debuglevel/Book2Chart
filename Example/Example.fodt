@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
+ <office:meta><meta:generator>LibreOffice/3.6$Windows_x86 LibreOffice_project/58f22d5-270d05a-e2abed1-ea17a85-9b5702</meta:generator><meta:creation-date>2012-12-27T23:12:17.53</meta:creation-date><dc:language>de-DE</dc:language><meta:editing-cycles>1</meta:editing-cycles><meta:editing-duration>P0D</meta:editing-duration><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="54" meta:word-count="557" meta:character-count="3329" meta:non-whitespace-character-count="2822"/><meta:user-defined meta:name="Info 1"/><meta:user-defined meta:name="Info 2"/><meta:user-defined meta:name="Info 3"/><meta:user-defined meta:name="Info 4"/></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="ViewAreaTop" config:type="int">26822</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="int">501</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="int">26340</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="int">12894</config:config-item>
+   <config:config-item config:name="ShowRedlineChanges" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="InBrowseMode" config:type="boolean">true</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="int">4147</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="int">39104</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="int">501</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="int">26822</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="int">26839</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="int">39714</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
+     <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">110</config:config-item>
+     <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsLabelDocument" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1928514</config:config-item>
+   <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintLeftPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintTextPlaceholder" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseOldNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
+   <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintControls" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintProspect" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintEmptyPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TableRowKeep" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintReversed" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddExternalLeading" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterIndependentLayout" config:type="string">high-resolution</config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">376265</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">1</config:config-item>
+   <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
+   <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">zAT+/0FuIE9uZU5vdGUgMjAxMCBzZW5kZW4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2VuZCBUbyBNaWNyb3NvZnQgT25lTm90ZSAyMDEwIAAWAAEA7gMAAAAAAAAEAAhSAAAEdAAAM1ROVwYAQQBuACAATwBuAGUATgBvAHQAZQAgADIAMAAxADAAIABzAGUAbgBkAGUAbgAAAAAAAAAAAAAAAAAAAAAAAAAAAAEEAAbcAAwDAy8AAAEACQCaCzQIZAABAA8AWAICAAEAWAIDAAEAQQA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAgAAAAEAAAD/////AAAAAAAAAAAAAAAAAAAAAERJTlUiANAADAMAAMKskFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA0AAAAFNNVEoAAAAAEADAAFMAZQBuAGQAIABUAG8AIABNAGkAYwByAG8AcwBvAGYAdAAgAE8AbgBlAE4AbwB0AGUAIAAyADAAMQAwACAARAByAGkAdgBlAHIAAABSRVNETEwAVW5pcmVzRExMAFBhcGVyU2l6ZQBMRVRURVIAT3JpZW50YXRpb24AUE9SVFJBSVQAUmVzb2x1dGlvbgBEUEk2MDAAQ29sb3JNb2RlADI0YnBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIAQ09NUEFUX0RVUExFWF9NT0RFDgBEVVBMRVhfVU5LTk9XTg==</config:config-item>
+   <config:config-item config:name="IgnoreFirstLineIndentInNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string">An OneNote 2010 senden</config:config-item>
+   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintPageBackground" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverflow" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintFaxName" config:type="string"/>
+   <config:config-item config:name="AddParaTableSpacing" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintDrawings" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
+   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
+   <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTables" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ooo:library-embedded ooo:name="Standard"/>
+   </ooo:libraries>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="Tahoma1" svg:font-family="Tahoma"/>
+  <style:font-face style:name="Times New Roman1" svg:font-family="&apos;Times New Roman&apos;"/>
+  <style:font-face style:name="Times New Roman" svg:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
+  <style:font-face style:name="Arial" svg:font-family="Arial" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="Lucida Sans Unicode" svg:font-family="&apos;Lucida Sans Unicode&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="Tahoma" svg:font-family="Tahoma" style:font-family-generic="system" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="graphic">
+   <style:graphic-properties svg:stroke-color="#808080" draw:fill-color="#cfe7f5" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="true"/>
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties style:use-window-font-color="true" fo:font-size="12pt" fo:language="de" fo:country="DE" style:letter-kerning="true" style:font-size-asian="12pt" style:language-asian="de" style:country-asian="DE" style:font-size-complex="12pt" style:language-complex="de" style:country-complex="DE"/>
+  </style:default-style>
+  <style:default-style style:family="paragraph">
+   <style:paragraph-properties fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="1.251cm" style:writing-mode="page"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="12pt" fo:language="de" fo:country="DE" style:letter-kerning="true" style:font-name-asian="Lucida Sans Unicode" style:font-size-asian="12pt" style:language-asian="de" style:country-asian="DE" style:font-name-complex="Tahoma" style:font-size-complex="12pt" style:language-complex="de" style:country-complex="DE" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+  </style:default-style>
+  <style:default-style style:family="table">
+   <style:table-properties table:border-model="collapsing"/>
+  </style:default-style>
+  <style:default-style style:family="table-row">
+   <style:table-row-properties fo:keep-together="auto"/>
+  </style:default-style>
+  <style:style style:name="Standard" style:family="paragraph" style:class="text" style:master-page-name="">
+   <style:paragraph-properties fo:margin="100%" fo:margin-left="0.101cm" fo:margin-right="0.101cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:contextual-spacing="false" fo:text-align="justify" style:justify-single-word="false" fo:text-indent="0.499cm" style:auto-text-indent="false" style:page-number="auto">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+  </style:style>
+  <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_20_body" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" style:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="Arial" fo:font-size="14pt" style:font-name-asian="Lucida Sans Unicode" style:font-size-asian="14pt" style:font-name-complex="Tahoma" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
+   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.212cm" style:contextual-spacing="false"/>
+  </style:style>
+  <style:style style:name="List" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="list">
+   <style:text-properties style:font-name-complex="Tahoma1"/>
+  </style:style>
+  <style:style style:name="Caption" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
+   <style:paragraph-properties fo:margin-top="0.212cm" fo:margin-bottom="0.212cm" style:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="Tahoma1" style:font-size-complex="12pt" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
+   <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name-complex="Tahoma1"/>
+  </style:style>
+  <style:style style:name="Preformatted_20_Text" style:display-name="Preformatted Text" style:family="paragraph" style:parent-style-name="Standard" style:class="html">
+   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0cm" style:contextual-spacing="false"/>
+   <style:text-properties style:font-name="Times New Roman1" fo:font-size="10pt" style:font-name-asian="Times New Roman1" style:font-size-asian="10pt" style:font-name-complex="Times New Roman1" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="Heading_20_1" style:display-name="Heading 1" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="1" style:class="text">
+   <style:text-properties fo:font-size="115%" fo:font-weight="bold" style:font-size-asian="115%" style:font-weight-asian="bold" style:font-size-complex="115%" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_10" style:display-name="Heading 10" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="10" style:class="text">
+   <style:text-properties fo:font-size="75%" fo:font-weight="bold" style:font-size-asian="75%" style:font-weight-asian="bold" style:font-size-complex="75%" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Hanging_20_indent" style:display-name="Hanging indent" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="text">
+   <style:paragraph-properties fo:margin="100%" fo:margin-left="1cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:contextual-spacing="false" fo:text-indent="-0.499cm" style:auto-text-indent="false">
+    <style:tab-stops>
+     <style:tab-stop style:position="0cm"/>
+    </style:tab-stops>
+   </style:paragraph-properties>
+  </style:style>
+  <style:style style:name="ZZTitelGeprueft" style:family="paragraph" style:parent-style-name="Heading" style:auto-update="true" style:default-outline-level="" style:list-style-name="" style:class="text" style:master-page-name="">
+   <style:paragraph-properties style:page-number="auto" fo:break-before="page" fo:background-color="transparent" style:shadow="none">
+    <style:tab-stops/>
+    <style:background-image/>
+   </style:paragraph-properties>
+   <style:text-properties fo:color="#00ff00" officeooo:rsid="000cece8"/>
+  </style:style>
+  <style:style style:name="ZZTitelVerbesserungsbeduerftig" style:family="paragraph" style:parent-style-name="Heading" style:auto-update="true" style:class="text" style:master-page-name="">
+   <style:paragraph-properties style:page-number="auto" fo:break-before="page" fo:background-color="transparent">
+    <style:background-image/>
+   </style:paragraph-properties>
+   <style:text-properties fo:color="#ff0000" officeooo:rsid="000cece8"/>
+  </style:style>
+  <style:style style:name="ZZKommentar" style:family="paragraph" style:parent-style-name="Standard" style:master-page-name="">
+   <style:paragraph-properties fo:margin="100%" fo:margin-left="1cm" fo:margin-right="1cm" fo:margin-top="0.049cm" fo:margin-bottom="0.049cm" style:contextual-spacing="false" fo:text-align="start" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto" fo:background-color="#ffff99" fo:padding="0.15cm" fo:border="0.06pt solid #000000" style:shadow="none">
+    <style:tab-stops/>
+    <style:background-image/>
+   </style:paragraph-properties>
+   <style:text-properties style:use-window-font-color="true" officeooo:rsid="000cece8" fo:background-color="transparent"/>
+  </style:style>
+  <style:style style:name="Salutation" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
+   <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
+  </style:style>
+  <style:style style:name="List_20_Indent" style:display-name="List Indent" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="text">
+   <style:paragraph-properties fo:margin="100%" fo:margin-left="5.001cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:contextual-spacing="false" fo:text-indent="-4.5cm" style:auto-text-indent="false">
+    <style:tab-stops>
+     <style:tab-stop style:position="0cm"/>
+    </style:tab-stops>
+   </style:paragraph-properties>
+  </style:style>
+  <style:style style:name="Marginalia" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="text">
+   <style:paragraph-properties fo:margin="100%" fo:margin-left="4.001cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
+  </style:style>
+  <style:style style:name="Contents_20_Heading" style:display-name="Contents Heading" style:family="paragraph" style:parent-style-name="Heading" style:class="index">
+   <style:paragraph-properties fo:margin="100%" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties fo:font-size="16pt" fo:font-weight="bold" style:font-size-asian="16pt" style:font-weight-asian="bold" style:font-size-complex="16pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_5" style:display-name="Heading 5" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="5" style:class="text">
+   <style:text-properties fo:font-size="85%" fo:font-weight="bold" style:font-size-asian="85%" style:font-weight-asian="bold" style:font-size-complex="85%" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_7" style:display-name="Heading 7" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="7" style:class="text">
+   <style:text-properties fo:font-size="75%" fo:font-weight="bold" style:font-size-asian="75%" style:font-weight-asian="bold" style:font-size-complex="75%" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="ZZInhalt" style:family="paragraph" style:parent-style-name="Standard" style:auto-update="true" style:master-page-name="">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false" style:page-number="auto" fo:background-color="transparent" style:shadow="none">
+    <style:tab-stops/>
+    <style:background-image/>
+   </style:paragraph-properties>
+   <style:text-properties officeooo:rsid="000cece8"/>
+  </style:style>
+  <style:style style:name="ZZZusammenfassung" style:family="paragraph" style:parent-style-name="Standard" style:master-page-name="">
+   <style:paragraph-properties fo:margin="100%" fo:margin-left="1cm" fo:margin-right="1cm" fo:margin-top="0.049cm" fo:margin-bottom="0.049cm" style:contextual-spacing="false" fo:keep-together="auto" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto" fo:background-color="#e6e6e6" fo:padding="0.15cm" fo:border="0.06pt solid #000000" style:shadow="none" fo:keep-with-next="auto">
+    <style:tab-stops/>
+    <style:background-image/>
+   </style:paragraph-properties>
+   <style:text-properties officeooo:rsid="000cece8" fo:background-color="transparent"/>
+  </style:style>
+  <style:style style:name="ZZEinordnungVorher" style:family="paragraph" style:parent-style-name="Standard" style:auto-update="true" style:master-page-name="">
+   <style:paragraph-properties fo:margin="100%" fo:margin-left="1cm" fo:margin-right="1cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:contextual-spacing="false" fo:text-align="start" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto" fo:background-color="transparent" style:shadow="none">
+    <style:background-image/>
+   </style:paragraph-properties>
+   <style:text-properties officeooo:rsid="000cece8" fo:background-color="#94bd5e"/>
+  </style:style>
+  <style:style style:name="ZZEinordnungDanach" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher" style:auto-update="true">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false" fo:background-color="transparent">
+    <style:background-image/>
+   </style:paragraph-properties>
+   <style:text-properties officeooo:rsid="000cece8" fo:background-color="#ffcc99"/>
+  </style:style>
+  <style:style style:name="ZZGedicht" style:family="paragraph" style:parent-style-name="ZZInhalt" style:master-page-name="">
+   <style:paragraph-properties fo:margin="100%" fo:margin-left="0.499cm" fo:margin-right="0.101cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto"/>
+   <style:text-properties officeooo:rsid="000cece8"/>
+  </style:style>
+  <style:style style:name="ZZTagebucheintrag" style:family="paragraph" style:parent-style-name="ZZInhalt">
+   <style:paragraph-properties fo:margin="100%" fo:margin-left="0.499cm" fo:margin-right="0.101cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
+   <style:text-properties officeooo:rsid="000cece8"/>
+  </style:style>
+  <style:style style:name="ZZTitelUngeprueft" style:family="paragraph" style:parent-style-name="ZZTitelVerbesserungsbeduerftig" style:master-page-name="">
+   <style:paragraph-properties style:page-number="auto" fo:break-before="page"/>
+   <style:text-properties fo:color="#ff6633" officeooo:rsid="000cece8"/>
+  </style:style>
+  <style:style style:name="ZZTitelMeilenstein" style:family="paragraph" style:parent-style-name="ZZTitelGeprueft" style:master-page-name="">
+   <style:paragraph-properties style:page-number="auto"/>
+   <style:text-properties fo:color="#0000ff" officeooo:rsid="000cece8"/>
+  </style:style>
+  <style:style style:name="Heading_20_3" style:display-name="Heading 3" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="3" style:class="text">
+   <style:text-properties fo:font-size="14pt" fo:font-weight="bold" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="ZZkritischeStelle" style:family="text">
+   <style:text-properties fo:color="#ff3333"/>
+  </style:style>
+  <style:style style:name="Numbering_20_Symbols" style:display-name="Numbering Symbols" style:family="text"/>
+  <text:outline-style style:name="Outline">
+   <text:outline-level-style text:level="1" style:num-format="">
+    <style:list-level-properties text:min-label-distance="0.381cm"/>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="2" style:num-format="">
+    <style:list-level-properties text:min-label-distance="0.381cm"/>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="3" style:num-format="">
+    <style:list-level-properties text:min-label-distance="0.381cm"/>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="4" style:num-format="">
+    <style:list-level-properties text:min-label-distance="0.381cm"/>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="5" style:num-format="">
+    <style:list-level-properties text:min-label-distance="0.381cm"/>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="6" style:num-format="">
+    <style:list-level-properties text:min-label-distance="0.381cm"/>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="7" style:num-format="">
+    <style:list-level-properties text:min-label-distance="0.381cm"/>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="8" style:num-format="">
+    <style:list-level-properties text:min-label-distance="0.381cm"/>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="9" style:num-format="">
+    <style:list-level-properties text:min-label-distance="0.381cm"/>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="10" style:num-format="">
+    <style:list-level-properties text:min-label-distance="0.381cm"/>
+   </text:outline-level-style>
+  </text:outline-style>
+  <text:list-style style:name="Numbering_20_1" style:display-name="Numbering 1">
+   <text:list-level-style-number text:level="1" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
+    <style:list-level-properties text:min-label-width="0.499cm"/>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="2" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
+    <style:list-level-properties text:space-before="0.501cm" text:min-label-width="0.499cm"/>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="3" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
+    <style:list-level-properties text:space-before="1cm" text:min-label-width="0.499cm"/>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="4" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
+    <style:list-level-properties text:space-before="1.501cm" text:min-label-width="0.499cm"/>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="5" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
+    <style:list-level-properties text:space-before="2cm" text:min-label-width="0.499cm"/>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="6" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
+    <style:list-level-properties text:space-before="2.501cm" text:min-label-width="0.499cm"/>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="7" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
+    <style:list-level-properties text:space-before="3.001cm" text:min-label-width="0.499cm"/>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="8" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
+    <style:list-level-properties text:space-before="3.502cm" text:min-label-width="0.499cm"/>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="9" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
+    <style:list-level-properties text:space-before="4.001cm" text:min-label-width="0.499cm"/>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="10" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
+    <style:list-level-properties text:space-before="4.502cm" text:min-label-width="0.499cm"/>
+   </text:list-level-style-number>
+  </text:list-style>
+  <text:list-style style:name="List_20_1" style:display-name="List 1">
+   <text:list-level-style-bullet text:level="1" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
+    <style:list-level-properties text:min-label-width="0.4cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="2" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
+    <style:list-level-properties text:space-before="0.401cm" text:min-label-width="0.4cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="3" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
+    <style:list-level-properties text:space-before="0.799cm" text:min-label-width="0.4cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="4" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
+    <style:list-level-properties text:space-before="1.2cm" text:min-label-width="0.4cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="5" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
+    <style:list-level-properties text:space-before="1.6cm" text:min-label-width="0.4cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="6" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
+    <style:list-level-properties text:space-before="2.001cm" text:min-label-width="0.4cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="7" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
+    <style:list-level-properties text:space-before="2.399cm" text:min-label-width="0.4cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="8" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
+    <style:list-level-properties text:space-before="2.8cm" text:min-label-width="0.4cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="9" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
+    <style:list-level-properties text:space-before="3.2cm" text:min-label-width="0.4cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="10" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
+    <style:list-level-properties text:space-before="3.601cm" text:min-label-width="0.4cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+  </text:list-style>
+  <text:list-style style:name="List_20_2" style:display-name="List 2">
+   <text:list-level-style-bullet text:level="1" text:style-name="Numbering_20_Symbols" text:bullet-char="–">
+    <style:list-level-properties text:min-label-width="0.3cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="2" text:style-name="Numbering_20_Symbols" text:bullet-char="–">
+    <style:list-level-properties text:space-before="0.3cm" text:min-label-width="0.3cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="3" text:style-name="Numbering_20_Symbols" text:bullet-char="–">
+    <style:list-level-properties text:space-before="0.6cm" text:min-label-width="0.3cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="4" text:style-name="Numbering_20_Symbols" text:bullet-char="–">
+    <style:list-level-properties text:space-before="0.899cm" text:min-label-width="0.3cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="5" text:style-name="Numbering_20_Symbols" text:bullet-char="–">
+    <style:list-level-properties text:space-before="1.199cm" text:min-label-width="0.3cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="6" text:style-name="Numbering_20_Symbols" text:bullet-char="–">
+    <style:list-level-properties text:space-before="1.499cm" text:min-label-width="0.3cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="7" text:style-name="Numbering_20_Symbols" text:bullet-char="–">
+    <style:list-level-properties text:space-before="1.801cm" text:min-label-width="0.3cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="8" text:style-name="Numbering_20_Symbols" text:bullet-char="–">
+    <style:list-level-properties text:space-before="2.101cm" text:min-label-width="0.3cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="9" text:style-name="Numbering_20_Symbols" text:bullet-char="–">
+    <style:list-level-properties text:space-before="2.401cm" text:min-label-width="0.3cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="10" text:style-name="Numbering_20_Symbols" text:bullet-char="–">
+    <style:list-level-properties text:space-before="2.7cm" text:min-label-width="0.3cm"/>
+    <style:text-properties fo:font-family="StarSymbol"/>
+   </text:list-level-style-bullet>
+  </text:list-style>
+  <text:notes-configuration text:note-class="footnote" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
+  <text:notes-configuration text:note-class="endnote" style:num-format="i" text:start-value="0"/>
+  <text:linenumbering-configuration text:number-lines="false" text:offset="0.499cm" style:num-format="1" text:number-position="left" text:increment="5"/>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:name="P1" style:family="paragraph" style:parent-style-name="ZZZusammenfassung">
+   <style:text-properties officeooo:paragraph-rsid="00113555"/>
+  </style:style>
+  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="ZZZusammenfassung">
+   <style:text-properties officeooo:paragraph-rsid="00118a55"/>
+  </style:style>
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="ZZZusammenfassung">
+   <style:text-properties officeooo:rsid="00118a55" officeooo:paragraph-rsid="00118a55"/>
+  </style:style>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="ZZZusammenfassung">
+   <style:text-properties officeooo:paragraph-rsid="001643d9"/>
+  </style:style>
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="ZZZusammenfassung">
+   <style:text-properties officeooo:paragraph-rsid="0016f2dc"/>
+  </style:style>
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="ZZZusammenfassung">
+   <style:text-properties officeooo:rsid="001643d9" officeooo:paragraph-rsid="001643d9"/>
+  </style:style>
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="ZZZusammenfassung">
+   <style:text-properties officeooo:rsid="0016f2dc" officeooo:paragraph-rsid="0016f2dc"/>
+  </style:style>
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="ZZZusammenfassung">
+   <style:text-properties officeooo:rsid="0018b40a" officeooo:paragraph-rsid="001aa7f9"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="ZZZusammenfassung">
+   <style:text-properties officeooo:paragraph-rsid="001b8b52"/>
+  </style:style>
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:paragraph-rsid="00113555"/>
+  </style:style>
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:paragraph-rsid="00118a55"/>
+  </style:style>
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:paragraph-rsid="0012ec6f"/>
+  </style:style>
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:rsid="0012ec6f" officeooo:paragraph-rsid="0012ec6f"/>
+  </style:style>
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:rsid="00118a55"/>
+  </style:style>
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:rsid="00118a55" officeooo:paragraph-rsid="00118a55"/>
+  </style:style>
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:paragraph-rsid="00147546"/>
+  </style:style>
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:paragraph-rsid="001643d9"/>
+  </style:style>
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:paragraph-rsid="0016f2dc"/>
+  </style:style>
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:rsid="00147546" officeooo:paragraph-rsid="00147546"/>
+  </style:style>
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:rsid="00147546" officeooo:paragraph-rsid="001643d9"/>
+  </style:style>
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:rsid="001643d9"/>
+  </style:style>
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:rsid="001643d9" officeooo:paragraph-rsid="001643d9"/>
+  </style:style>
+  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:rsid="001643d9" officeooo:paragraph-rsid="001b8b52"/>
+  </style:style>
+  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:rsid="0016f2dc" officeooo:paragraph-rsid="0016f2dc"/>
+  </style:style>
+  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:paragraph-rsid="0018b40a"/>
+  </style:style>
+  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:rsid="0018b40a" officeooo:paragraph-rsid="0018b40a"/>
+  </style:style>
+  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:paragraph-rsid="001b8b52"/>
+  </style:style>
+  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="ZZTitelMeilenstein">
+   <style:text-properties officeooo:paragraph-rsid="00113555"/>
+  </style:style>
+  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="ZZTitelMeilenstein">
+   <style:text-properties officeooo:paragraph-rsid="00118a55"/>
+  </style:style>
+  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="ZZTitelMeilenstein">
+   <style:text-properties officeooo:rsid="00118a55" officeooo:paragraph-rsid="00118a55"/>
+  </style:style>
+  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="ZZTitelMeilenstein">
+   <style:text-properties officeooo:paragraph-rsid="001643d9"/>
+  </style:style>
+  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="ZZTitelMeilenstein">
+   <style:text-properties officeooo:rsid="001643d9" officeooo:paragraph-rsid="001643d9"/>
+  </style:style>
+  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="ZZEinordnungDanach">
+   <style:text-properties officeooo:paragraph-rsid="00118a55"/>
+  </style:style>
+  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="ZZEinordnungDanach">
+   <style:text-properties officeooo:paragraph-rsid="0012ec6f"/>
+  </style:style>
+  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="ZZEinordnungDanach">
+   <style:text-properties officeooo:rsid="0012ec6f"/>
+  </style:style>
+  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="ZZEinordnungDanach">
+   <style:text-properties officeooo:rsid="0012ec6f" officeooo:paragraph-rsid="0012ec6f"/>
+  </style:style>
+  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="ZZEinordnungDanach">
+   <style:text-properties officeooo:rsid="00118a55" officeooo:paragraph-rsid="00118a55"/>
+  </style:style>
+  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="ZZEinordnungDanach">
+   <style:text-properties officeooo:paragraph-rsid="001643d9"/>
+  </style:style>
+  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="ZZEinordnungDanach">
+   <style:text-properties officeooo:rsid="00147546"/>
+  </style:style>
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="ZZEinordnungDanach">
+   <style:text-properties officeooo:rsid="001643d9"/>
+  </style:style>
+  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="ZZEinordnungDanach">
+   <style:text-properties officeooo:rsid="001643d9" officeooo:paragraph-rsid="001643d9"/>
+  </style:style>
+  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="ZZEinordnungDanach">
+   <style:text-properties officeooo:paragraph-rsid="001b8b52"/>
+  </style:style>
+  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="ZZKommentar">
+   <style:text-properties officeooo:paragraph-rsid="0018b40a"/>
+  </style:style>
+  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="ZZKommentar">
+   <style:text-properties officeooo:rsid="0018b40a" officeooo:paragraph-rsid="0018b40a"/>
+  </style:style>
+  <style:style style:name="P45" style:family="paragraph" style:parent-style-name="ZZKommentar">
+   <style:text-properties officeooo:paragraph-rsid="001aa7f9"/>
+  </style:style>
+  <style:style style:name="P46" style:family="paragraph" style:parent-style-name="ZZKommentar">
+   <style:text-properties officeooo:paragraph-rsid="001b8b52"/>
+  </style:style>
+  <style:style style:name="P47" style:family="paragraph" style:parent-style-name="ZZTitelUngeprueft">
+   <style:text-properties officeooo:paragraph-rsid="0018b40a"/>
+  </style:style>
+  <style:style style:name="P48" style:family="paragraph" style:parent-style-name="ZZTitelUngeprueft">
+   <style:text-properties officeooo:rsid="0018b40a" officeooo:paragraph-rsid="0018b40a"/>
+  </style:style>
+  <style:style style:name="P49" style:family="paragraph" style:parent-style-name="ZZTitelUngeprueft">
+   <style:text-properties officeooo:paragraph-rsid="001b8b52"/>
+  </style:style>
+  <style:style style:name="P50" style:family="paragraph" style:parent-style-name="ZZTagebucheintrag">
+   <style:text-properties officeooo:paragraph-rsid="001b8b52"/>
+  </style:style>
+  <style:style style:name="P51" style:family="paragraph" style:parent-style-name="ZZTitelGeprueft">
+   <style:text-properties officeooo:paragraph-rsid="001c161a"/>
+  </style:style>
+  <style:style style:name="P52" style:family="paragraph" style:parent-style-name="ZZTitelVerbesserungsbeduerftig">
+   <style:text-properties officeooo:paragraph-rsid="001ce547"/>
+  </style:style>
+  <style:style style:name="P53" style:family="paragraph" style:parent-style-name="ZZKommentar">
+   <style:text-properties officeooo:paragraph-rsid="001c161a"/>
+  </style:style>
+  <style:style style:name="P54" style:family="paragraph" style:parent-style-name="ZZKommentar">
+   <style:text-properties officeooo:paragraph-rsid="001ce547"/>
+  </style:style>
+  <style:style style:name="P55" style:family="paragraph" style:parent-style-name="ZZKommentar">
+   <style:text-properties officeooo:paragraph-rsid="001d6d42"/>
+  </style:style>
+  <style:style style:name="P56" style:family="paragraph" style:parent-style-name="ZZInhalt">
+   <style:text-properties officeooo:paragraph-rsid="001c161a"/>
+  </style:style>
+  <style:style style:name="P57" style:family="paragraph" style:parent-style-name="ZZInhalt">
+   <style:text-properties officeooo:paragraph-rsid="001ce547"/>
+  </style:style>
+  <style:style style:name="P58" style:family="paragraph" style:parent-style-name="ZZInhalt">
+   <style:text-properties officeooo:paragraph-rsid="001d6d42"/>
+  </style:style>
+  <style:style style:name="P59" style:family="paragraph" style:parent-style-name="ZZZusammenfassung">
+   <style:text-properties officeooo:paragraph-rsid="001c161a"/>
+  </style:style>
+  <style:style style:name="P60" style:family="paragraph" style:parent-style-name="ZZZusammenfassung">
+   <style:text-properties officeooo:paragraph-rsid="001d6d42"/>
+  </style:style>
+  <style:style style:name="P61" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:paragraph-rsid="001c161a"/>
+  </style:style>
+  <style:style style:name="P62" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:paragraph-rsid="001ce547"/>
+  </style:style>
+  <style:style style:name="P63" style:family="paragraph" style:parent-style-name="ZZEinordnungVorher">
+   <style:text-properties officeooo:paragraph-rsid="001d6d42"/>
+  </style:style>
+  <style:style style:name="P64" style:family="paragraph" style:parent-style-name="ZZEinordnungDanach">
+   <style:text-properties officeooo:paragraph-rsid="001ce547"/>
+  </style:style>
+  <style:style style:name="P65" style:family="paragraph" style:parent-style-name="ZZEinordnungDanach">
+   <style:text-properties officeooo:paragraph-rsid="001d6d42"/>
+  </style:style>
+  <style:style style:name="P66" style:family="paragraph" style:parent-style-name="ZZTagebucheintrag">
+   <style:text-properties officeooo:paragraph-rsid="001ce547"/>
+  </style:style>
+  <style:style style:name="P67" style:family="paragraph" style:parent-style-name="ZZTitelUngeprueft">
+   <style:text-properties officeooo:paragraph-rsid="001ce547"/>
+  </style:style>
+  <style:style style:name="P68" style:family="paragraph" style:parent-style-name="ZZTitelMeilenstein">
+   <style:text-properties officeooo:paragraph-rsid="001ce547"/>
+  </style:style>
+  <style:style style:name="P69" style:family="paragraph" style:parent-style-name="ZZTitelMeilenstein">
+   <style:text-properties officeooo:paragraph-rsid="001d6d42"/>
+  </style:style>
+  <style:style style:name="T1" style:family="text">
+   <style:text-properties officeooo:rsid="000cece8"/>
+  </style:style>
+  <style:style style:name="T2" style:family="text">
+   <style:text-properties officeooo:rsid="00113555"/>
+  </style:style>
+  <style:style style:name="T3" style:family="text">
+   <style:text-properties officeooo:rsid="00118a55"/>
+  </style:style>
+  <style:style style:name="T4" style:family="text">
+   <style:text-properties officeooo:rsid="0012ec6f"/>
+  </style:style>
+  <style:style style:name="T5" style:family="text">
+   <style:text-properties officeooo:rsid="00147546"/>
+  </style:style>
+  <style:style style:name="T6" style:family="text">
+   <style:text-properties officeooo:rsid="001643d9"/>
+  </style:style>
+  <style:style style:name="T7" style:family="text">
+   <style:text-properties officeooo:rsid="0016f2dc"/>
+  </style:style>
+  <style:style style:name="T8" style:family="text">
+   <style:text-properties officeooo:rsid="0018b40a"/>
+  </style:style>
+  <style:style style:name="T9" style:family="text">
+   <style:text-properties officeooo:rsid="001aa7f9"/>
+  </style:style>
+  <style:style style:name="T10" style:family="text">
+   <style:text-properties officeooo:rsid="001b8b52"/>
+  </style:style>
+  <style:style style:name="T11" style:family="text">
+   <style:text-properties officeooo:rsid="001c161a"/>
+  </style:style>
+  <style:style style:name="T12" style:family="text">
+   <style:text-properties officeooo:rsid="001ce547"/>
+  </style:style>
+  <style:style style:name="T13" style:family="text">
+   <style:text-properties officeooo:rsid="001d6d42"/>
+  </style:style>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties fo:page-width="20.999cm" fo:page-height="29.699cm" style:num-format="1" style:print-orientation="portrait" fo:margin="2cm" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:footnote-max-height="0cm">
+    <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="none" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
+   </style:page-layout-properties>
+   <style:header-style/>
+   <style:footer-style/>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Standard" style:page-layout-name="pm1"/>
+ </office:master-styles>
+ <office:body>
+  <office:text>
+   <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
+   <text:sequence-decls>
+    <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+   </text:sequence-decls>
+   <text:p text:style-name="P51"><text:span text:style-name="T11">Purpose</text:span></text:p>
+   <text:p text:style-name="P56"><text:span text:style-name="T11">The purpose of Book2Chart is to build a graph and to draw a diagramm which shows the dependencies between the chapters of a book. Using a graph, it is way more easy to find chapters which have to be placed in the beginning of a book, in the ending of a book or, of course, somewhere in between.</text:span></text:p>
+   <text:p text:style-name="P51"><text:span text:style-name="T11">Data Format</text:span></text:p>
+   <text:p text:style-name="P56"><text:span text:style-name="T11">This tool builds on top of a LibreOffice template which contains special named style sheets for chapters, text, commentaries, summaries and dependencies.</text:span></text:p>
+   <text:p text:style-name="P56"><text:span text:style-name="T11">For example, this chapter depends on the chapter named „Purpose“ as there is explained what this tool is used for. If you don&apos;t know what this tool is used for, you probably do not want to know which data formats it&apos;s using. So, it depends on the said chapter.</text:span></text:p>
+   <text:p text:style-name="P61"><text:span text:style-name="T11">Purpose</text:span></text:p>
+   <text:p text:style-name="P53"><text:span text:style-name="T11">I should probably also mention that this tool only works with the „Flat ODT“ (.fodt) format provided by LibeOffice.</text:span></text:p>
+   <text:p text:style-name="ZZTitelVerbesserungsbeduerftig"><text:span text:style-name="T11">System Requirements</text:span></text:p>
+   <text:p text:style-name="P56"><text:span text:style-name="T11">Book2Chart was developed using Microsoft .NET 4.5 and WPF as GUI toolkit.</text:span></text:p>
+   <text:p text:style-name="P56"><text:span text:style-name="T11">If you&apos;re using Microsoft Windows, this should not realy bother you, as everything hopefully just works as accepted. But if you&apos;re using Linux/BSD and Mono, you&apos;re out of luck: Mono does unfortunately not provide any support for WPF.</text:span></text:p>
+   <text:p text:style-name="P56"><text:span text:style-name="T11">As mentioned in the data format chapter, you will also need LibreOffice to create the files.</text:span></text:p>
+   <text:p text:style-name="P61"><text:span text:style-name="T11">Data Format</text:span></text:p>
+   <text:p text:style-name="P59"><text:span text:style-name="T11">Quick summary of the system requirements (.NET 4.5) and that Mono won&apos;t work.</text:span></text:p>
+   <text:p text:style-name="P54"><text:span text:style-name="T12">I should add a nice and clear listing of the requirements.</text:span></text:p>
+   <text:p text:style-name="P67"><text:span text:style-name="T12">Style sheets</text:span></text:p>
+   <text:p text:style-name="P66"><text:span text:style-name="T12">Dear diary,</text:span></text:p>
+   <text:p text:style-name="P66"><text:span text:style-name="T12">there are a few style sheets which can be used in this document. For example, if I want to write a diary entry, I use the diary style sheet.</text:span></text:p>
+   <text:p text:style-name="P66"><text:span text:style-name="T12">Actually, there are a bunch of style sheets which can be grouped together. I will explain them in a further chapter.</text:span></text:p>
+   <text:p text:style-name="P66"><text:span text:style-name="T12">In love,</text:span></text:p>
+   <text:p text:style-name="P66"><text:span text:style-name="T12"><text:s text:c="3"/>Hans Otto.</text:span></text:p>
+   <text:p text:style-name="P63"><text:span text:style-name="T13">Purpose</text:span></text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T12">Style sheets II</text:span></text:p>
+   <text:p text:style-name="P57"><text:span text:style-name="T12">Chapters:</text:span></text:p>
+   <text:p text:style-name="P57"><text:span text:style-name="T12">ZZTitelUngeprueft is for a chapter which was just written down. Means: „ZZ Title not checked“</text:span></text:p>
+   <text:p text:style-name="P57"><text:span text:style-name="T12">ZZTitelGeprueft is for a chapter which was already checked and approved. Means: „ZZ Title approved“</text:span></text:p>
+   <text:p text:style-name="P57"><text:span text:style-name="T12">ZZTitelVerbesserungsbeduerftig is for a chapter which was check but not approved. Means: „ZZ Title improvable“</text:span></text:p>
+   <text:p text:style-name="P57"><text:span text:style-name="T12">ZZTitelMeilenstein is sort of a meta structure and not a real chapter. You could add this one to indicate certain milestones. </text:span><text:span text:style-name="T13">Means „ZZ Title Milestone“</text:span></text:p>
+   <text:p text:style-name="P57"><text:span text:style-name="T13"/></text:p>
+   <text:p text:style-name="P58"><text:span text:style-name="T13">Text:</text:span></text:p>
+   <text:p text:style-name="P58"><text:span text:style-name="T13">ZZInhalt is just the plain textual content of a chapter without any frills. Means: „ZZ Content“</text:span></text:p>
+   <text:p text:style-name="P58"><text:span text:style-name="T13">ZZTagebucheintrag translates to „ZZ diary entry“</text:span></text:p>
+   <text:p text:style-name="P58"><text:span text:style-name="T13">ZZGedicht translates to „ZZ <text:s/>poem“</text:span></text:p>
+   <text:p text:style-name="P58"><text:span text:style-name="T13">Actually, they are parsed the same way by Book2Chart for now. So they are just some style sheets which could be usefull while using the text processor.</text:span></text:p>
+   <text:p text:style-name="P58"><text:span text:style-name="T13"/></text:p>
+   <text:p text:style-name="P58"><text:span text:style-name="T13">Meta:</text:span></text:p>
+   <text:p text:style-name="P58"><text:span text:style-name="T13">ZZKommentar is used to comment a chapter. Here, you can note ideas or stuff you do not agree with in the chapter.</text:span></text:p>
+   <text:p text:style-name="P58"><text:span text:style-name="T13">ZZZusammenfassung can be used to create a short summary of the chapter containing the most important things that happend there.</text:span></text:p>
+   <text:p text:style-name="P58"><text:span text:style-name="T13">ZZEinordnungVorher is probably the most important style sheet regarding creating the dependency graph. It should contain the name of the chapter which your current chapter depends on.</text:span></text:p>
+   <text:p text:style-name="P58"><text:span text:style-name="T13">ZZEinordnungDanach is the opposite and contains the chapters which depend on your current chapter.</text:span></text:p>
+   <text:p text:style-name="P63"><text:span text:style-name="T13">Style sheets</text:span></text:p>
+   <text:p text:style-name="P55"><text:span text:style-name="T13">I should really get rid of those german identifiers.</text:span></text:p>
+   <text:p text:style-name="P60"><text:span text:style-name="T13">Grouped and explained the style sheets.</text:span></text:p>
+   <text:p text:style-name="P68"><text:span text:style-name="T12">Beginning</text:span></text:p>
+   <text:p text:style-name="P64"><text:span text:style-name="T12">Purpose</text:span></text:p>
+   <text:p text:style-name="P68"><text:span text:style-name="T12">Technology Stuff</text:span></text:p>
+   <text:p text:style-name="P62"><text:span text:style-name="T12">Beginning</text:span></text:p>
+   <text:p text:style-name="P64"><text:span text:style-name="T12">Data Format</text:span></text:p>
+   <text:p text:style-name="P64"><text:span text:style-name="T12">System Requirements</text:span></text:p>
+   <text:p text:style-name="P69"><text:span text:style-name="T13">Explenations</text:span></text:p>
+   <text:p text:style-name="P63"><text:span text:style-name="T13">Beginning</text:span></text:p>
+   <text:p text:style-name="P65"><text:span text:style-name="T13">Style sheets</text:span></text:p>
+   <text:p text:style-name="P68"><text:span text:style-name="T12">Ending</text:span></text:p>
+   <text:p text:style-name="P62"><text:span text:style-name="T12">Technology Stuff</text:span></text:p>
+   <text:p text:style-name="P63"><text:span text:style-name="T13">Explenations</text:span></text:p>
+   <text:p text:style-name="P63"><text:span text:style-name="T13">System Requirements</text:span></text:p>
+   <text:p text:style-name="P63"><text:span text:style-name="T13">Style sheets II</text:span></text:p>
+  </office:text>
+ </office:body>
+</office:document>
